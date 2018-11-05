@@ -1,0 +1,18 @@
+//цвета
+
+$orange: #f9b43b;
+$red: #e35028;
+$black: #2f3234;
+
+//normalize
+
+@import "normalize/normalize.scss";
+
+// setups
+@import "../CSS/blocks/fonts.scss";
+@import "../CSS/blocks/layout.scss";
+
+// blocks
+@import "blocks/hero.scss";
+@import "blocks/best.scss";
+@import "blocks/reviews.scss";
