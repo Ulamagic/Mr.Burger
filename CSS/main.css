@@ -395,13 +395,13 @@ template {
 
 @font-face {
   font-family: 'Gagalin-Regular';
-  src: url("../../fonts/gagalin-regular-webfont.woff") format("woff"), url("../../fonts/gagalin-regular-webfont.woff2") format("woff2");
+  src: url("../fonts/gagalin-regular-webfont.woff") format("woff"), url("../fonts/gagalin-regular-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Lifehack-Medium';
-  src: url("../../fonts/lifehack_medium-webfont.woff") format("woff"), url("../../fonts/lifehack_medium-webfont.woff2") format("woff2");
+  src: url("../fonts/lifehack_medium-webfont.woff") format("woff"), url("../fonts/lifehack_medium-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal; }
 
@@ -412,7 +412,7 @@ body {
 body {
   font-family: Ubuntu;
   font-size: 16px;
-  line-height: 1.42;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
@@ -428,7 +428,10 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .wrapper {
   position: relative;
@@ -495,12 +498,17 @@ button {
   flex-direction: column; }
 
 .header {
+  margin-top: 2%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .header__buttons {
   display: -webkit-box;
@@ -511,23 +519,30 @@ button {
   align-items: center;
   margin-left: auto; }
 
-.hero__container {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1; }
-
 .hero__contant {
+  -webkit-box-flex: 0.75;
+  -ms-flex: 0.75;
+  flex: 0.75;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.hero__text {
+  margin-top: 10%; }
 
 .hero__slogan {
   font-family: Lifehack-Medium;
   color: #ffffff;
-  font-size: 35px; }
+  font-size: 65px; }
+
+.nav {
+  margin-right: 15px; }
 
 .nav__list {
   display: -webkit-box;
@@ -539,6 +554,8 @@ button {
 
 .nav__link {
   color: #ffffff;
+  font-size: 13px;
+  text-transform: uppercase;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -567,10 +584,28 @@ button {
   background: url("../../img/bg.png") center center no-repeat;
   background-size: cover; }
 
+.best__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap; }
+
+.section-title_position_center {
+  padding-top: 20%;
+  width: 100%; }
+
 .best__list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 30%; }
 
 .best__item {
   width: 30%;
@@ -583,15 +618,19 @@ button {
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 15%; }
   .best__item .best__title {
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: center;
     font-family: Lifehack-Medium;
     font-size: 24px; }
   .best__item .best__text {
     text-align: center;
-    font-size: 14px; }
+    font-size: 14px;
+    color: #2f3234;
+    line-height: 25px;
+    margin-top: 2px; }
 
 .reviews {
   background-color: black; }
@@ -614,11 +653,45 @@ button {
   filter: grayscale(100%);
   position: relative; }
   .reviews__item:hover .reviews__hover {
-    opacity: 0.7; }
+    opacity: 0.8; }
 
 .reviews__hover {
   color: white;
   width: 100%;
   height: 100%;
   opacity: 0;
-  background-color: #505050; }
+  background-color: #505050;
+  font-size: 14px; }
+  .reviews__hover h1 {
+    font-family: 'Gagalin-Regular';
+    font-size: 16px; }
+  .reviews__hover .hover__item {
+    height: 100%;
+    margin: 0 auto;
+    width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .reviews__hover .hover__item p {
+      margin-top: 20%; }
+    .reviews__hover .hover__item .btn {
+      margin-top: 20%; }
+
+.btn {
+  border-radius: 5px;
+  padding: 10px 15px;
+  background: #e35028;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px; }

@@ -1,0 +1,82 @@
+.hero {
+  background: url('../img/video-bg.png') center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.hero__contant {
+  flex: 0.75;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__text {
+  margin-top: 10%;
+}
+.hero__slogan {
+  font-family: Lifehack-Medium;
+  color: #ffffff;
+  font-size: 65px;
+}
+
+.nav {
+  margin-right: 15px;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  &:last-child {
+    .nav__link:after {
+      display: none;
+    }
+  }
+}
+
+.nav__link {
+  color: #ffffff;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #fff;   
+    margin: 0 16px;
+  }
+}
+
+.hero__picture {
+  width: 50%;
+}
+
+.hero__text {
+  width: 50%;
+  .section-title {
+    color: $orange;
+  }
+}
