@@ -8,12 +8,24 @@ $black: #2f3234;
 
 @import "normalize/normalize.scss";
 
+//media
+@import "blocks/_media.scss";
+
 // setups
-@import "../CSS/blocks/_fonts.scss";
-@import "../CSS/blocks/_layout.scss";
+@import "blocks/_fonts.scss";
+@import "blocks/_layout.scss";
 
 // blocks
 @import "blocks/_hero.scss";
 @import "blocks/_best.scss";
 @import "blocks/_reviews.scss";
-@import "blocks/_btn.scss"
+@import "blocks/_btn.scss";
+@import "blocks/_fixed-menu.scss";
+@import "blocks/_menu.scss";
+@import "blocks/_team.scss";
+@import "blocks/_video.scss";
+@import "blocks/_map.scss";
+@import "blocks/_order.scss";
+@import "blocks/_add.scss";
+
+

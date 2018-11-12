@@ -1,3 +1,7 @@
+html {
+  font-size: rem(16px);
+}
+
 html,
 body {
   height: 100%;
@@ -5,7 +9,7 @@ body {
 
 body {
   font-family: Ubuntu;
-  font-size: 16px;
+  font-size: rem(16px);
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,7 +19,7 @@ body {
 .container {
   margin: 0 auto;
   position: relative;
-  width: 940px;
+  width: rem(940px);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -25,7 +29,7 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 940px + 20px;
+  min-width: rem(940px) + rem(20px);
   min-height: 100%;
   overflow: hidden;
 }
@@ -55,7 +59,7 @@ p {
 }
 section {
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 
   &_centered {
     display: flex;
@@ -66,8 +70,8 @@ section {
 
 .section-title {
   font-family: Gagalin-Regular;
-  font-size: 72px;
-  margin-bottom: 40px;
+  font-size: rem(72px);
+  margin-bottom: rem(40px);
 
 
   &_position {
@@ -75,11 +79,4 @@ section {
       text-align: center;
     }
   }
-}
-
-button {
-  margin-left: 20px;
-  color: #ffffff;
-  background-color: $red;
-
 }

@@ -29,11 +29,11 @@
   height: 100%;
   opacity: 0;
   background-color: #505050;
-  font-size: 14px;
+  font-size: rem(14px);
 
   h1 {
     font-family: 'Gagalin-Regular';
-    font-size: 16px;
+    font-size: rem(16px);
   }
   .hover__item {
     height: 100%;

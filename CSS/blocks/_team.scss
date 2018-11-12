@@ -1,0 +1,85 @@
+.team {
+    background: url('../../img/bg-team.png') center center no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .container {
+        width: 100vw;
+    }
+  }
+  
+  .team__content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background: rgba(#505050, .8);
+    padding-left: rem(70px);
+    display: flex;
+    flex-direction: column;
+    padding-top: rem(50px);
+  }
+  
+  .section-title {
+      color: $orange;
+  }
+  .team-acco__trigger {
+    font-family: 'Gagalin-Regular';
+    font-size: rem(14px);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(20px);
+  
+    &:before {
+      content: "";
+      height: 0;
+      width: 0;
+      border: 9px solid transparent;
+      border-top-color: $orange;
+      border-bottom-width: 0px;
+  
+    }
+  }
+  
+  .team-acco__container {
+    display: flex;
+    align-items: center;
+
+   .team-acco__pic {
+       overflow: hidden;
+       width: rem(100px);
+       height: rem(100px);
+       border-radius: 50%;
+       margin: rem(20px);
+   }
+  }
+  
+  .team-acco__text {
+    color: #fff;
+    .team-acco__text-title {
+        font-weight: bold;
+        margin-bottom: rem(20px);
+    }
+  }
+  
+  .team-acco__content {
+    display: none;
+  }
+  
+  .team-acco__item_active {
+    .team-acco__trigger {
+      color: $orange;
+  
+      &:before {
+        transform: rotate(-180deg);
+      }
+    }
+  
+    .team-acco__content {
+      display: block;
+    }
+  }

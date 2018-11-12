@@ -1,0 +1,16 @@
+.map {
+    background: url(../../img/map.png) center center no-repeat;
+    background-size: cover;
+    
+    .map__content {
+        height: 85%;
+    }
+    .marker {
+        position: absolute;
+        margin: 50% 50%;
+    }
+}
+footer {
+    display: flex;
+    background-color: black;
+}
