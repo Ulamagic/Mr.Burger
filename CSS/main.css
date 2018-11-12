@@ -579,7 +579,7 @@ section {
     color: #f9b43b; }
 
 .best {
-  background: url("../../img/bg.png") center center no-repeat;
+  background: url(../img/bg.png) center center no-repeat;
   background-size: cover; }
 
 .best__container {
@@ -808,7 +808,7 @@ section {
   transition-property: max-width, opacity, visibility; }
 
 .team {
-  background: url("../../img/bg-team.png") center center no-repeat;
+  background: url(../img/bg-team.png) center center no-repeat;
   background-size: cover;
   position: relative; }
   .team .container {
@@ -889,7 +889,7 @@ section {
   display: block; }
 
 .video {
-  background: url(../../img/bg-video.png) center center no-repeat;
+  background: url(../img/bg-video.png) center center no-repeat;
   background-size: cover; }
 
 .section-title_color_black {
@@ -900,7 +900,7 @@ section {
   max-height: 25rem; }
 
 .map {
-  background: url(../../img/map.png) center center no-repeat;
+  background: url(.../img/map.png) center center no-repeat;
   background-size: cover; }
   .map .map__content {
     height: 85%; }
@@ -963,7 +963,7 @@ footer {
     margin-right: 0; }
 
 .add {
-  background: url(../../img/Rectangle.png) center center no-repeat;
+  background: url(../img/Rectangle.png) center center no-repeat;
   background-size: cover; }
 
 .add_content {
