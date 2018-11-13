@@ -16,6 +16,11 @@
   filter: grayscale(100%);  
   position: relative;
 
+  @include tablets {
+    width: 50%;
+    height: 25%;
+  }
+
   &:hover {
     .reviews__hover {
       opacity: 0.8;
@@ -46,6 +51,9 @@
     
     p {
       margin-top: 20%;
+      @include phones {
+        display: none;
+      }
     }
 
     .btn {

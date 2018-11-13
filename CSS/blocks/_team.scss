@@ -4,25 +4,33 @@
     position: relative;
 
     .container {
-        width: 100vw;
+    position: absolute;
+	  right: 0;
+  	top: 0;
+    bottom: 0;
+    width: 50%;
+	  background: rgba(#2f3234, .93);
+    padding: 5% 2% 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include tablets {
+    width: 100%;
+    padding: 0;
+    }
     }
   }
   
   .team__content {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 50%;
-    background: rgba(#505050, .8);
-    padding-left: rem(70px);
-    display: flex;
-    flex-direction: column;
-    padding-top: rem(50px);
+    text-align: center;
   }
   
   .section-title {
-      color: $orange;
+    margin-bottom: 12%;
+    color: $orange;
+
   }
   .team-acco__trigger {
     font-family: 'Gagalin-Regular';
@@ -30,7 +38,7 @@
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     margin-bottom: rem(20px);
   

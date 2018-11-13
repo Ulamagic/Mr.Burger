@@ -9,7 +9,9 @@
     .section-title {
       color: #fff;
       align-self: flex-start;
-      margin-left: rem(100px);
+      position: absolute;
+	    top: 10%;
+	    left: 10%;
     }
   }
   

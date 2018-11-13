@@ -1,5 +1,13 @@
 html {
   font-size: rem(16px);
+
+  @include tablets {
+    font-size: rem(14px);
+  }
+
+  @include phones {
+    font-size: rem(11px);
+  }
 }
 
 html,
@@ -19,7 +27,7 @@ body {
 .container {
   margin: 0 auto;
   position: relative;
-  width: rem(940px);
+  max-width: rem(940px);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -28,8 +36,6 @@ body {
 
 .wrapper {
   position: relative;
-  width: 100%;
-  min-width: rem(940px) + rem(20px);
   min-height: 100%;
   overflow: hidden;
 }

@@ -4,6 +4,11 @@ $orange: #f9b43b;
 $red: #e35028;
 $black: #2f3234;
 
+// resolutions
+$desktop: 1200px;
+$tablets: 768px;
+$phones: 480px;
+
 //normalize
 
 @import "normalize/normalize.scss";
@@ -27,5 +32,6 @@ $black: #2f3234;
 @import "blocks/_map.scss";
 @import "blocks/_order.scss";
 @import "blocks/_add.scss";
+@import "blocks/_hamburger-menu-link.scss";
 
 
