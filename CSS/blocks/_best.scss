@@ -45,7 +45,12 @@
     display: flex;
     justify-content: center;
     margin-bottom: 15%;
+    .best__icon-pic {
+      width: rem(100px);
+      height: rem(100px);
+    }
   }
+
   
   .best__title {
     margin-bottom: rem(80px);
@@ -53,7 +58,6 @@
     text-align: center;
     font-family: Lifehack-Medium;
     font-size: rem(24px);
-
     color: $black;
     margin-bottom: rem(20px);
   }
@@ -64,6 +68,10 @@
     color: #2f3234;
     line-height: rem(25px);
     margin-top: rem(25px);
+    display: inline-flex;
+    p {
+      color: black;
+    }
   }
 }
 

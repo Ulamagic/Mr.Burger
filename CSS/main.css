@@ -704,6 +704,9 @@ section {
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 15%; }
+    .best__item .best__icon .best__icon-pic {
+      width: 6.25rem;
+      height: 6.25rem; }
   .best__item .best__title {
     margin-bottom: 5rem;
     margin-top: 1.875rem;
@@ -717,7 +720,12 @@ section {
     font-size: 0.875rem;
     color: #2f3234;
     line-height: 1.5625rem;
-    margin-top: 1.5625rem; }
+    margin-top: 1.5625rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+    .best__item .best__text p {
+      color: black; }
 
 .reviews {
   background-color: black; }
@@ -1081,7 +1089,7 @@ p {
       -ms-flex-pack: center;
       justify-content: center; } }
 
-.social__icon {
+.socials__link-icon {
   width: 1.25rem;
   height: 1.25rem; }
 
@@ -1256,6 +1264,10 @@ p {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+
+.add__icon-pic {
+  width: 6.25rem;
+  height: 6.25rem; }
 
 .hamburger-menu-link {
   vertical-align: middle;
