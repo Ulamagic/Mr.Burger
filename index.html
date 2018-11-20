@@ -10,6 +10,8 @@
         Mr.Burger
     </title>
     <link rel="stylesheet" href="./CSS/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -173,26 +175,47 @@
                     </div>
                 </div>
             </section>
-            <!--Акция ТЁМНЫЙ бургер-->
+            <!--Секция_Слайдер-->
             <section class="section add section_centered">
                 <div class="container">
                     <div class="add_content">
-                        <!--Боьшая картинка с черным бургером-->
-                        <div class="add__pic">
-                            <svg class="add__icon-pic">
-                                <use xlink:href="./icons/sprite.svg#burger"></use>
+                        <!--Стрелочка назад-->
+                        <div class="slider__arrow--left">
+                            <svg class="arrow__icon" id="moveback">
+                                <use xlink:href="./icons/sprite.svg#arrow-scroll"></use>
                             </svg>
-                            <svg class="add__icon-pic">
-                                <use xlink:href="./icons/sprite.svg#kkal"></use>
-                            </svg>
-                            <img src="../img/Бургер+с+чернилами+каракатицы.png" alt="">
                         </div>
-                        <div class="main__text">
-                            <!--Заголовок-->
-                            <div class="section-title section-title_color_black">
-                                Dark BEEF Burger
+                        <!--Основной контент слайдера-->
+                        <div class="add__pic">
+                            <a class="add__button-consist">
+                                <svg class="add__icon--burger">
+                                    <use xlink:href="./icons/sprite.svg#burger"></use>
+                                </svg>
+                                    состав                                
+                            </a>
+                            <img src="./img/BlakBurger.png" class="mainBurger" alt="">
+                            <div class="kkal">
+                                <svg class="add__icon--kkal">
+                                    <use xlink:href="./icons/sprite.svg#kkal"></use>
+                                </svg>
+                                <div class="kkal__text">
+                                    <p class="add__text--nomber">
+                                        1200
+                                    </p>
+                                    <p class="add__text--kkal">
+                                        ккал
+                                    </p>
+                                </div>
                             </div>
-                            <p>
+                        </div>
+                        <!--Рекламный текст-->
+                        <div class="main__text">
+                            <!--Название бургера-->
+                            <p class="section-title">
+                                Dark BEEF <br />
+                                Burger
+                            </p>
+                            <p class="slider__desc">
                                 Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками
                                 нежнейшего
                                 сыра
@@ -201,22 +224,29 @@
                                 соуса
                                 чураско.
                             </p>
-                            <h3>
-                                500 рублей
-                            </h3>
-                            <!--Кнопка Заказа-->
-                            <a href="#" class="btn btn--red">
-                                Заказать
-                            </a>
+                            <div class="order__content">
+                                <div class="slider__cost">
+                                    <div class="cost">
+                                        <p class="cost__number">
+                                            500
+                                        </p>
+                                        <p class="cost__val">
+                                            рублей
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--Кнопка Заказа-->
+                                <a href="#" class="btn btn--red">
+                                    Заказать
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <!--Стрелочка далее-->
-                    <div class="next_part">
-                        <a class="down-arrow" href="#" data-scroll-to="1">
-                                <svg class="down-arrow__icon">
-                                        <use xlink:href="./icons/sprite.svg#arrow-scroll"></use>
-                                    </svg>
-                        </a>
+                        <!--Стрелочка далее-->
+                        <div class="slider__arrow--right">
+                            <svg class="arrow__icon" id="movefoward">
+                                <use xlink:href="./icons/sprite.svg#arrow-scroll"></use>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -638,9 +668,9 @@
             <section class="section map section_centered">
                 <div class="container">
                     <div class="map__content">
-                            <svg class="map__icon">
-                                    <use xlink:href="./icons/sprite.svg#map-marker"></use>
-                                </svg>
+                        <svg class="map__icon">
+                            <use xlink:href="./icons/sprite.svg#map-marker"></use>
+                        </svg>
                     </div>
                     <footer class="footer">
                         <div class="container footer__container">

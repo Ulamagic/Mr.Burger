@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/task_2.css">
+</head>
+
+<body>
+    <div id="container">
+        <!--Задачи №1,2,3,4
+            Задание 1:
+При помощи DOM API создайте DOM-элемент с тегом div
+Добавьте созданный элемент в DOM-дерево
+При помощи DOM API, поместите в элемент текст: 'Этот элемент создан при помощи DOM API'
+Задание 2:
+При помощи DOM API создайте элемент с тегом div
+Задайте созданному элементу класс 'inner'
+При помощи DOM API, поместите в элемент текст: 'Этот элемент тоже создан при помощи DOM API'
+Поместите созданный элемент внутрь элемента, который был создан в предыдущем задании
+Задание 3:
+Возьмите код из предыдущего задания и при помощи DOM API задайте созданному элементу CSS-стиль 'color: red'
+Заданий 4:
+Возьмите код первого задания
+Добавьте обработчик события click на созданный элемент
+При клике на элемент, в консоль должен выводиться текст: 'Этот текст говорит о том, что я всё сделал правильно'
+Откройте страничку в браузере
+Кликните на элемент
+Убедитесь, что после клика на элемент в консоли появилась надпись с текстом 'Этот текст говорит о том, что я всё сделал правильно'        -->
+        <div>
+            Это задача № 1,2,3,4
+        </div>
+    </div>
+    <script>
+        const element = document.createElement('div');
+        const container = document.querySelector('#container');
+        container.appendChild(element);
+        element.textContent = "Этот элемент создан при помощи DOM API"
+
+        const element1 = document.createElement("div");
+        element1.className = "inner";
+        const container1 = document.querySelector("#element");
+        element.appendChild(element1);
+        element1.textContent = "Этот элемент создан при помощи DOM API";
+        element1.style.color = "red";
+        element1.addEventListener("click", function () {
+            console.log("Этот текст говорит о том, что я всё сделал правильно");
+        });
+    </script>
+    <!--Задача № 5
+    При помощи DOM API создайте элемент с тегом a
+Задайте созданному элементу атрибут href и запишите в этот атрибут значение  'https://loftschool.com'
+Добавьте созданный элемент в DOM-дерево
+Добавьте обработчик события click на созданный элемент
+Напишите код обработчика таким образом, чтобы при клике на созданный элемент в консоли выводилась надпись 'Я кликнул на ссылку HREF'. Вместо HREF необходимо подставить значение атрибута href. Но перехода по ссылке быть не должно.
+-->
+    <script>
+        var element2 = document.createElement("a");
+        element2.href = "https://loftschool.com";
+        const container2 = document.querySelector("#container");
+        container.appendChild(element2);
+        element2.textContent = "LoftSchool";
+        element2.addEventListener("click", function (e) {
+            e.preventDefault();
+            console.log("я кликнула ссылку https://loftschool.com");
+        })
+    </script>
+
+<!--Задача №6
+При помощи DOM API создайте input и button
+Поместите созданные элементы на страницу
+При клике на кнопку необходимо выводить в консоль значение из текстового поля
+-->
+    <script>
+    var element3 = document.createElement("input");
+    var element4 =document.createElement("button");
+    const container3 = document.querySelector("#container");
+    container.appendChild(element3);
+    container.appendChild(element4);
+    element4.textContent = "кнопка";
+    element3.addEventListener("keydown", function(e) {
+        element4.addEventListener("click", function(){
+            console.log(e.key)
+            });
+        });
+    </script>
+
+    
+    <!--Задача №7
+    Возьмите за основу следующий каркас - https://codepen.io/smelukov/pen/mXdJZw
+Это простейший слайдер элементов. При клике на правую стрелочку, элементы должны сдвигаться вправо. При клике на левую стрелочку, элементы должны сдвигаться влево.
+Наполните кодом пустые обработчики кликов таким образом, чтобы стрелочки работали корректно
+-->
+    <div class="slider-container">
+        <a class="arrow" id="left" href="#">←</a>
+        <div class="slider">
+            <div class="items" id="items">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+            </div>
+        </div>
+        <a class="arrow" id="right" href="#">→</a>
+    </div>
+    <script>
+    const left = document.querySelector("#left");
+const right = document.querySelector("#right");
+const items = document.querySelector("#items");
+const computed = getComputedStyle(items);
+
+
+right.addEventListener("click", function(e) {
+  e.preventDefault();
+  let currentRight = parseInt(computed.right);
+
+  if (!currentRight) {
+    currentRight = 0;
+  }
+  
+  if (currentRight < 500) {
+    items.style.right = currentRight + 100 + "px";
+  }
+});
+
+left.addEventListener("click", function(e) {
+  e.preventDefault();
+  let currentRight = parseInt(computed.right);
+
+  if (!currentRight) {
+    currentRight = 0;
+  }
+
+  if (currentRight > 0) {
+    items.style.right = currentRight - 100 + "px";
+  }
+});
+    </script>
+
+</body>
+
+</html>
