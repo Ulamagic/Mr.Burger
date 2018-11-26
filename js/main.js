@@ -37,7 +37,7 @@ $().ready(function (){
 
     $("#movefoward").on("click", function () {
         console.log("forward");
-        if (currentslide < objectList.lenght - 1) {
+        if (currentslide < objectList.length - 1) {
             currentslide++;
             let current = objectList[currentslide];
             $(".mainBurger").attr("src", current.src);
@@ -46,3 +46,47 @@ $().ready(function (){
         }
     });
 });
+
+$().ready(function(){
+
+    let activeClass = "menu-list__item_active";
+ 
+    let btn = $('.menu-list__title');
+ 
+    btn.click(function(event){
+      event.preventDefault();
+ 
+ 
+      var parent = $(this).parent();
+ 
+      if (parent.hasClass(activeClass)){
+        parent.remove(activeClass)
+      }else{
+        btn.parent().removeClass(activeClass);
+        parent.addClass(activeClass);
+      }
+ 
+    });
+ });
+
+ $().ready(function(){
+
+    let activeClass = "team-acco__item_active";
+ 
+    let btn = $('.team-acco__trigger');
+ 
+    btn.click(function(event){
+      event.preventDefault();
+ 
+ 
+      var parent = $(this).parent();
+ 
+      if (parent.hasClass(activeClass)){
+        parent.remove(activeClass)
+      }else{
+        btn.parent().removeClass(activeClass);
+        parent.addClass(activeClass);
+      }
+ 
+    });
+ });

@@ -3,15 +3,15 @@
     background-size: cover;
     
     .map__content {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+      position: relative;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
     }
-    .marker {
-        position: absolute;
-        margin: 50% 50%;
+    .map__icon {
+      position: absolute;
     }
 }
 footer {
@@ -25,14 +25,16 @@ footer {
 }
 
 .footer__container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+ width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
 
-    @include phones {
-      flex-direction: column;
-    }
+  @include phones {
+    flex-direction: column;
   }
+}
 
   .footer__cleft {
     width: 50%;
@@ -47,12 +49,18 @@ footer {
   p {
     color: #ffffff;
     font-size: rem(14px);
+    margin-bottom: rem(10px);
   }
 
   .contacts__phone {
     color: $red;
     text-decoration: none;
     font-size: rem(14px);
+    font-weight: bold;
+    .contacts__phone-icon {
+      width: rem(12px);
+      height: rem(12px);
+    }
   }
 
   .footer__right {
@@ -60,14 +68,16 @@ footer {
     margin-bottom: 0;
     display: flex;
     justify-content: flex-end;
-  
+
     @include phones {
       justify-content: center;
     }
   }
-
+  .social-networks__link{
+    opacity: 0.5;
+  }
   .socials__link-icon {
-      width: rem(20px);
-      height: rem(20px);
-
+    margin-right: rem(20px);
+      width: rem(25px);
+      height: rem(25px);
   }

@@ -52,10 +52,6 @@
   
     }
   }
-  
-  .team-acco__container {
-    display: flex;
-    align-items: center;
 
    .team-acco__pic {
        overflow: hidden;
@@ -64,7 +60,6 @@
        border-radius: 50%;
        margin: rem(20px);
    }
-  }
   
   .team-acco__text {
     color: #fff;
@@ -75,7 +70,13 @@
   }
   
   .team-acco__content {
-    display: none;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: 1s;
+    transition-property: max-width, opacity, visibility;
   }
   
   .team-acco__item_active {
@@ -86,8 +87,11 @@
         transform: rotate(-180deg);
       }
     }
-  
     .team-acco__content {
-      display: block;
+      visibility: visible;
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      max-height: rem(250px);
     }
   }

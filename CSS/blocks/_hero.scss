@@ -9,6 +9,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include tablets {
+   width: 100%;
+  }
 }
 
 .header__buttons {
@@ -124,4 +127,9 @@
       height: rem(45px);
     }
   }
+}
+
+.down-arrow__icon {
+  fill: #fff;
+  
 }
