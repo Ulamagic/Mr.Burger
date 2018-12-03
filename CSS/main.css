@@ -1041,17 +1041,12 @@ section {
   max-width: 41.25rem;
   max-height: 25rem; }
 
-.map {
-  background: url(../img/map.png) center center no-repeat;
-  background-size: cover; }
-  .map .map__content {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; }
-  .map .map__icon {
-    position: absolute; }
+.map__content {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
 
 footer {
   display: -webkit-box;
@@ -1135,7 +1130,8 @@ p {
   background: url(../img/bg-order.png) center center no-repeat;
   background-size: cover; }
   .order .section-title {
-    text-align: center; }
+    text-align: center;
+    margin-top: 20%; }
 
 .order__form {
   margin-left: -5%;
