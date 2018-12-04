@@ -1,0 +1,142 @@
+.add {
+    background: linear-gradient($orange, #f08c33);
+    background-size: cover;
+}
+
+.container {
+    max-width: rem(1010px);
+}
+.add_content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add__pic {
+    width: 50%;
+    position: relative;
+}
+
+.mainBurger {
+    height: rem(315px);
+    width: rem(500px);
+    margin-top: rem(50px);
+    margin-bottom: rem(50px);
+}
+
+.add__button-consist {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: #f08c33;
+    border-radius: rem(5px);
+    padding: rem(10px) rem(15px);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: rem(13px);
+    top: 0;
+    left: 0;
+    font-family: 'Gagalin-Regular';
+    align-items: center;
+}
+
+.add__icon--burger {
+    width: rem(50px);
+    height: rem(50px);
+}
+
+
+.kkal{
+    position: absolute;
+    width: rem(60px);
+    height: rem(75px);
+    bottom: 0;
+    left: 0;
+}
+
+.add__icon--kkal {
+    width: rem(60px);
+    height: rem(60px);
+}
+
+.kkal__text {
+    position: absolute;
+    bottom: rem(-20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: rem(12px);
+}
+
+.add__text--kkal {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: rem(13px);
+    font-family: 'Gagalin-Regular';
+    margin-top: rem(15px);
+}
+
+.add__text--nomber {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: rem(20px);
+    top: 0;
+    left: 0;
+    font-family: 'Gagalin-Regular';
+}
+
+.arrow__icon {
+    width: rem(30px);
+    height: rem(15px);
+}
+
+.slider__arrow--left {
+    transform: rotate(90deg);
+}
+
+.slider__arrow--right {
+    transform: rotate(-90deg);
+}
+
+.main__text {
+    width: 50%;
+}
+
+.section-title_color_white {
+    color: white;
+    margin-top: rem(10px);
+}
+
+.slider__desc {
+    line-height: rem(25px);
+    margin-bottom: rem(20px);
+    
+}
+
+.cost {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Gagalin-Regular';
+}
+
+.cost__number{
+    color: $red;
+    font-size: rem(70px);
+    margin-right: rem(15px);
+}
+
+.cost__val{
+    color: $red;
+    font-size: rem(30px);
+    margin-right: rem(30px);
+}
+
+.order__content{
+    display: flex;
+    align-items: flex-end;
+    
+}

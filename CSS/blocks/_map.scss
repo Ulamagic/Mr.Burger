@@ -1,0 +1,100 @@
+
+.map__content {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: rem(10px) 0;
+}
+
+.footer__container {
+ width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+  .footer__cleft {
+    width: 50%;
+    margin-bottom: rem(15px);
+
+    @include phones {
+    width: 100%;
+    text-align: center;
+    }
+  }
+
+  p {
+    color: #ffffff;
+    font-size: rem(14px);
+    margin-bottom: rem(10px);
+  }
+
+  .contacts__phone {
+    color: $red;
+    text-decoration: none;
+    font-size: rem(14px);
+    font-weight: bold;
+    .contacts__phone-icon {
+      width: rem(12px);
+      height: rem(12px);
+    }
+  }
+
+  .footer__right {
+    text-align: right;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    @include phones {
+      justify-content: center;
+    }
+  }
+  .social-networks__link{
+    opacity: 0.5;
+  }
+  .socials__link-icon {
+    margin-right: rem(20px);
+      width: rem(25px);
+      height: rem(25px);
+  }
+
+.map__hint {
+  background-color: #ffec97;
+  border-color: black;
+  font-size: rem(12px);
+  font-weight: bold;
+  padding: rem(6px);
+  color: $red;
+}
+
+.map__balloon {
+  background-color: $orange;
+  border-radius: rem(5px);
+  border-color: black;
+  font-size: rem(16px);
+  color: $red;
+  font-weight: bold;
+  padding: rem(10px);
+}
+
+.map_nich {
+  height: rem(25px);
+  width: rem(25px);
+}
