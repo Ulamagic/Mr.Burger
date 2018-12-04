@@ -1141,7 +1141,7 @@ p {
   font-size: 1rem;
   color: #e35028;
   font-weight: bold;
-  padding: px/16px0rem; }
+  padding: 0.625rem; }
 
 .map_nich {
   height: 1.5625rem;
@@ -1374,7 +1374,7 @@ p {
 
 .kkal__text {
   position: absolute;
-  bottom: 0;
+  bottom: -1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
