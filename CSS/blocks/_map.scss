@@ -74,3 +74,27 @@ footer {
       width: rem(25px);
       height: rem(25px);
   }
+
+.map__hint {
+  background-color: #ffec97;
+  border-color: black;
+  font-size: rem(12px);
+  font-weight: bold;
+  padding: rem(6px);
+  color: $red;
+}
+
+.map__balloon {
+  background-color: $orange;
+  border-radius: rem(5px);
+  border-color: black;
+  font-size: rem(16px);
+  color: $red;
+  font-weight: bold;
+  padding: rem(10px);
+}
+
+.map_nich {
+  height: rem(25px);
+  width: rem(25px);
+}
