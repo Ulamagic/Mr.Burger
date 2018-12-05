@@ -45,9 +45,7 @@ $().ready(function (){
             $(".slider__desc").text(current.title);
         }
     });
-});
 
-$().ready(function(){
 
     let activeClass = "menu-list__item_active";
  
@@ -67,9 +65,7 @@ $().ready(function(){
       }
  
     });
-});
 
-$().ready(function(){
 
     let activeClass = "team-acco__item_active";
  
@@ -89,9 +85,7 @@ $().ready(function(){
       }
  
     });
-});
 
-$().ready(function(){
     ymaps.ready(init);    
     function init(){ 
        var myMap = new ymaps.Map("map", {
@@ -157,9 +151,7 @@ $().ready(function(){
         myMap.geoObjects.add (placemark3);
         myMap.geoObjects.add (placemark4);
     };
-});
 
-$().ready(function(){
     $('.maincontent').fullpage({
         anchors: ['hero', 'best', 'burgers', 'team', 'menu', 'reviews', 'order', 'map'],
         menu: ".fixed-menu"
