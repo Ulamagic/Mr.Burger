@@ -10,28 +10,20 @@
         Mr.Burger
     </title>
     <link rel="stylesheet" href="./CSS/main.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>    
+    <link rel="stylesheet" href="./CSS/fullpage.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/fullpage.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=522f6456-6515-4bc3-b87f-032cc700ebe4&lang=ru_RU"></script>
-    <script>
-        new fullpage('.maincontent',{
-        anchors: ['hero','best','burgers','team','menu','reviews','player','order','map'],
-        loopTop: true,
-        loopBottom:true,
-        navigation:true,
-        // scrollOverflow:true
-    
-    });
-    </script>
+    <script src="./js/scroll.js"></script>
     <script src="./js/map.js"></script>
-    <script src="./js/main.js"></script>    
+    <script src="./js/main.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="maincontent">
             <!--Приветственная секция-->
-            <section class="section hero" data-anchor="hero" >
+            <section class="section hero" data-anchor="hero">
                 <div class="container">
                     <!--Хедер-->
                     <header class="header">
@@ -65,7 +57,7 @@
                                     </li>
                                     <li class="nav__item">
                                         <a href="#" class="nav__link">
-                                            Обзывы
+                                            Отзывы
                                         </a>
                                     </li>
                                     <li class="nav__item">
@@ -119,7 +111,7 @@
                 </div>
             </section>
             <!--Секция о нас-->
-            <section class="section best section_centered"  data-anchor="best" >
+            <section class="section best section_centered" data-anchor="best">
                 <div class="container">
                     <div class="best__container">
                         <!--Заголовок-->
@@ -189,7 +181,7 @@
                 </div>
             </section>
             <!--Секция_Слайдер-->
-            <section class="section add section_centered" data-anchor="burgers" >
+            <section class="section add section_centered" data-anchor="burgers">
                 <div class="container">
                     <div class="add_content">
                         <!--Стрелочка назад-->
@@ -264,7 +256,7 @@
                 </div>
             </section>
             <!--Команда!-->
-            <section class="section team" data-anchor="team" >
+            <section class="section team" data-anchor="team">
                 <div class="container">
                     <div class="team__content">
                         <!--Заголовок-->
@@ -358,7 +350,7 @@
                 </div>
             </section>
             <!--секция меню-->
-            <section class="section menu" data-anchor="menu" >
+            <section class="section menu" data-anchor="menu">
                 <div class="container__menu">
                     <!--ЗАголовок-->
                     <div class="section-title">
@@ -427,7 +419,7 @@
                 </div>
             </section>
             <!--Отзывы-->
-            <section class="section reviews" data-anchor="reviews" >
+            <section class="section reviews" data-anchor="reviews">
                 <ul class="reviews__list">
                     <!--Фоточки и текск с ними-->
                     <li class="reviews__item" style="background-image: url('./img/Foto-1.png')">
@@ -577,7 +569,7 @@
                 </ul>
             </section>
             <!-- Секция КАК мы работаем!-->
-            <section class="section video section_centered" data-anchor="player" >
+            <section class="section video section_centered" data-anchor="player">
                 <div class="container">
                     <div class="Video__content">
                         <!--Заголовок-->
@@ -594,7 +586,7 @@
                 </div>
             </section>
             <!--Секция заказа-->
-            <section class="section order section_centered" data-anchor="order" >
+            <section class="section order section_centered" data-anchor="order">
                 <div class="container">
                     <div class="order__container">
                         <!--Заголовок-->
@@ -680,12 +672,12 @@
                     </div>
                 </div>
             </section>
-            <section class="section map section_centered" data-anchor="map" >
+            <section class="section map section_centered" data-anchor="map">
 
-                    <div id="map" class="map__content">
-                        
-                    </div>
-                    
+                <div id="map" class="map__content">
+
+                </div>
+
                 <footer class="footer">
                     <div class="container footer__container">
                         <div class="footer_left">
@@ -730,35 +722,6 @@
             </section>
         </div>
     </div>
-    <ul class="fixed-menu">
-        <li class="fixed-menu__item">
-            <a class="fixed-menu__link"></a>
-        </li>
-        <li class="fixed-menu__item active">
-            <a class="fixed-menu__link" ></a>
-        </li>
-        <li class="fixed-menu__item">
-            <a class="fixed-menu__link" ></a>
-        </li>
-        <li class="fixed-menu__item">
-            <a class="fixed-menu__link" ></a>
-        </li>
-        <li class="fixed-menu__item">
-            <a class="fixed-menu__link" ></a>
-        </li>
-        <li class="fixed-menu__item">
-            <a class="fixed-menu__link" ></a>
-        </li>
-        <li class="fixed-menu__item">
-            <a class="fixed-menu__link" ></a>
-        </li>        
-        <li class="fixed-menu__item">
-            <a class="fixed-menu__link" ></a>
-        </li>
-        <li class="fixed-menu__item">
-            <a class="fixed-menu__link"></a>
-        </li>
-    </ul>
 </body>
 
 </html>

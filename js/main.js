@@ -1,4 +1,6 @@
-$().ready(function (){
+
+
+$(document).ready(function (){    
     let currentslide = 0;    
     let activeClass = "menu-list__item_active";
     let btn = $('.menu-list__title');
@@ -29,6 +31,8 @@ $().ready(function (){
 
     ]
 
+
+
     $("#moveback").on("click", function () {
         console.log("backward");
         if (currentslide > 0) {
@@ -51,12 +55,8 @@ $().ready(function (){
         }
     });
 
-
- 
     btn.click(function(event){
       event.preventDefault();
- 
- 
       var parent = $(this).parent();
  
       if (parent.hasClass(activeClass)){
@@ -70,8 +70,7 @@ $().ready(function (){
  
     btnTrigger.click(function(event){
       event.preventDefault();
- 
- 
+  
       var parent = $(this).parent();
  
       if (parent.hasClass(activeClassTrigger)){
@@ -80,7 +79,6 @@ $().ready(function (){
         btnTrigger.parent().removeClass(activeClassTrigger);
         parent.addClass(activeClassTrigger);
       }
- 
     });
 });
 
