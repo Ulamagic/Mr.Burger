@@ -159,4 +159,11 @@ $().ready(function(){
     };
 });
 
+$().ready(function(){
+    $('.maincontent').fullpage({
+        anchors: ['hero', 'best', 'burgers', 'team', 'menu', 'reviews', 'order', 'map'],
+        menu: ".fixed-menu"
+    });
+});
+
 
