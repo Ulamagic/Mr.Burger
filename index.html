@@ -10,20 +10,20 @@
         Mr.Burger
     </title>
     <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/fullpage.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/fullpage.min.js.map"></script>
-    <script src="js/fullpage.extensions.min.js"></script>
-    <script src="js/fullpage.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=522f6456-6515-4bc3-b87f-032cc700ebe4&lang=ru_RU" type="text/javascript">
-    </script>
+    <script src="js/fullpage.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=522f6456-6515-4bc3-b87f-032cc700ebe4&lang=ru_RU"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/main.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="maincontent">
             <!--Приветственная секция-->
-            <Section class="section hero" id="section0">
+            <section class="section hero" data-anchor="hero">
                 <div class="container">
                     <!--Хедер-->
                     <header class="header">
@@ -57,7 +57,7 @@
                                     </li>
                                     <li class="nav__item">
                                         <a href="#" class="nav__link">
-                                            Обзывы
+                                            Отзывы
                                         </a>
                                     </li>
                                     <li class="nav__item">
@@ -109,9 +109,9 @@
                         </a>
                     </div>
                 </div>
-            </Section>
+            </section>
             <!--Секция о нас-->
-            <section class="section best section_centered" id="section1">
+            <section class="section best section_centered" data-anchor="best">
                 <div class="container">
                     <div class="best__container">
                         <!--Заголовок-->
@@ -181,7 +181,7 @@
                 </div>
             </section>
             <!--Секция_Слайдер-->
-            <section class="section add section_centered" id="section2">
+            <section class="section add section_centered" data-anchor="burgers">
                 <div class="container">
                     <div class="add_content">
                         <!--Стрелочка назад-->
@@ -256,7 +256,7 @@
                 </div>
             </section>
             <!--Команда!-->
-            <section class="section team" id="section3">
+            <section class="section team" data-anchor="team">
                 <div class="container">
                     <div class="team__content">
                         <!--Заголовок-->
@@ -350,7 +350,7 @@
                 </div>
             </section>
             <!--секция меню-->
-            <section class="section menu" id="section4">
+            <section class="section menu" data-anchor="menu">
                 <div class="container__menu">
                     <!--ЗАголовок-->
                     <div class="section-title">
@@ -419,7 +419,7 @@
                 </div>
             </section>
             <!--Отзывы-->
-            <section class="section reviews" id="section5">
+            <section class="section reviews" data-anchor="reviews">
                 <ul class="reviews__list">
                     <!--Фоточки и текск с ними-->
                     <li class="reviews__item" style="background-image: url('./img/Foto-1.png')">
@@ -569,7 +569,7 @@
                 </ul>
             </section>
             <!-- Секция КАК мы работаем!-->
-            <section class="section video section_centered" id="section6">
+            <section class="section video section_centered" data-anchor="player">
                 <div class="container">
                     <div class="Video__content">
                         <!--Заголовок-->
@@ -586,7 +586,7 @@
                 </div>
             </section>
             <!--Секция заказа-->
-            <section class="section order section_centered" id="section">
+            <section class="section order section_centered" data-anchor="order">
                 <div class="container">
                     <div class="order__container">
                         <!--Заголовок-->
@@ -672,12 +672,12 @@
                     </div>
                 </div>
             </section>
-            <section class="section map section_centered" id="section7">
+            <section class="section map section_centered" data-anchor="map">
 
-                    <div id="map" class="map__content">
-                        
-                    </div>
-                    
+                <div id="map" class="map__content">
+
+                </div>
+
                 <footer class="footer">
                     <div class="container footer__container">
                         <div class="footer_left">
@@ -720,32 +720,6 @@
                     </div>
                 </footer>
             </section>
-            <ul class="fixed-menu">
-                <li class="fixed-menu__item" data-menuanchor="hero">
-                    <a class="fixed-menu__link" href="#hero"></a>
-                </li>
-                <li class="fixed-menu__item active" data-menuanchor="best">
-                    <a class="fixed-menu__link" href="#best"></a>
-                </li>
-                <li class="fixed-menu__item" data-menuanchor="burgers">
-                    <a class="fixed-menu__link" href="#burgers"></a>
-                </li>
-                <li class="fixed-menu__item" data-menuanchor="team">
-                    <a class="fixed-menu__link" href="#team"></a>
-                </li>
-                <li class="fixed-menu__item" data-menuanchor="menu">
-                    <a class="fixed-menu__link" href="#menu"></a>
-                </li>
-                <li class="fixed-menu__item" data-menuanchor="reviews">
-                    <a class="fixed-menu__link" href="#reviews"></a>
-                </li>
-                <li class="fixed-menu__item" data-menuanchor="order">
-                    <a class="fixed-menu__link" href="#order"></a>
-                </li>
-                <li class="fixed-menu__item" data-menuanchor="map">
-                    <a class="fixed-menu__link" href="#map"></a>
-                </li>
-            </ul>
         </div>
     </div>
 </body>
